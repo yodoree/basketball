@@ -2,11 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Video from "./routes/Video";
 import Videos from "./routes/Videos";
 
-// {`${process.env.PUBLIC_URL}/`}
-
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
       <Routes>
         <Route path="/" element={<Videos />} />
         <Route path="/videos/:id" element={<Video />} />

@@ -41,9 +41,9 @@ const VideoDescription = styled.p`
 
 const VideoWrapper = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 `;
 interface RouteState {
   name: string;
