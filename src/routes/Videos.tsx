@@ -64,26 +64,32 @@ function Videos() {
         </Video>
 
         <Video>
-          <Link to="/videos/sxPCM6KdqtA" state={{ name: "첫번째 연습" }}>
+          <Link to="/videos/sxPCM6KdqtA" state={{ name: "두번째 연습" }}>
             두번째 연습
           </Link>
         </Video>
 
         <Video>
-          <Link to="/videos/OML5Cpg-LJg" state={{ name: "첫번째 연습" }}>
+          <Link to="/videos/OML5Cpg-LJg" state={{ name: "세번째 연습" }}>
             세번째 연습
           </Link>
         </Video>
 
         <Video>
-          <Link to="/videos/rlfzhYVclAU" state={{ name: "첫번째 연습" }}>
+          <Link to="/videos/rlfzhYVclAU" state={{ name: "네번째 연습" }}>
             네번째 연습
           </Link>
         </Video>
 
         <Video>
-          <Link to="/videos/dl4ocmK5gbg" state={{ name: "첫번째 연습" }}>
+          <Link to="/videos/dl4ocmK5gbg" state={{ name: "다섯번째 연습" }}>
             다섯번째 연습
+          </Link>
+        </Video>
+
+        <Video>
+          <Link to="/videos/7OIesgL-p1I" state={{ name: "여섯번째 연습" }}>
+            여섯번째 연습
           </Link>
         </Video>
       </VideoList>

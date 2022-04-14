@@ -1,13 +1,8 @@
 import { useLocation, useParams } from "react-router";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-const videos = [
-  "https://www.youtube.com/embed/q6K5FQghqCw",
-  "https://www.youtube.com/embed/sxPCM6KdqtA",
-  "https://www.youtube.com/embed/OML5Cpg-LJg",
-  "https://www.youtube.com/embed/rlfzhYVclAU",
-  "https://www.youtube.com/embed/dl4ocmK5gbg",
-];
+
+const URL = `https://www.youtube.com/embed`;
 
 const Container = styled.div`
   padding: 0px 10px;
@@ -65,7 +60,7 @@ function Video() {
         <iframe
           width="90%"
           height="35%"
-          src={`${videos.filter((video) => id === video.substring(30))}`}
+          src={`${URL}/${id}`}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
