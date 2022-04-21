@@ -66,11 +66,15 @@ function Video() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        <VideoDescription>
-          ✅ 자신의 피드백을 유튜브 영상 댓글에 남겨주세요! <br />
-          🏆 꾸준한 피드백을 남겨주시는분께는 <br />
-          👍🏼 연말에 푸짐한 상품을 드립니다!
-        </VideoDescription>
+        {name.includes("풀영상") ? (
+          <VideoDescription>✅무편집본 영상입니다</VideoDescription>
+        ) : (
+          <VideoDescription>
+            ✅ 자신의 피드백을 유튜브 영상 댓글에 남겨주세요! <br />
+            🏆 꾸준한 피드백을 남겨주시는분께는 <br />
+            👍🏼 연말에 푸짐한 상품을 드립니다!
+          </VideoDescription>
+        )}
       </VideoWrapper>
     </Container>
   );

@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/03/01/backboard-1866968_1280.jpg");
-  background-size: cover;
-  background-position: bottom 200px;
-  height: 100vh;
-`;
-
 const Container = styled.div`
   padding: 0px 10px;
   max-width: 480px;
@@ -29,13 +22,19 @@ const Title = styled.h1`
 
 const VideoList = styled.ul``;
 
-const Video = styled.li`
+const VideoContainer = styled.li`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Video = styled.div`
   background-color: ${(props) => props.theme.cardBgColor};
   color: ${(props) => props.theme.textColor};
   border-radius: 15px;
   margin-bottom: 10px;
   border: 1px solid white;
-
+  width: 100%;
+  margin-right: 5px;
   a {
     display: flex;
     align-items: center;
@@ -57,41 +56,71 @@ function Videos() {
         <Title>농구연습팀</Title>
       </Header>
       <VideoList>
-        <Video>
-          <Link to="/videos/q6K5FQghqCw" state={{ name: "첫번째 연습" }}>
-            첫번째 연습
-          </Link>
-        </Video>
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/q6K5FQghqCw" state={{ name: "1번째 연습" }}>
+              1번째 연습
+            </Link>
+          </Video>
+        </VideoContainer>
 
-        <Video>
-          <Link to="/videos/sxPCM6KdqtA" state={{ name: "두번째 연습" }}>
-            두번째 연습
-          </Link>
-        </Video>
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/sxPCM6KdqtA" state={{ name: "2번째 연습" }}>
+              2번째 연습
+            </Link>
+          </Video>
+        </VideoContainer>
 
-        <Video>
-          <Link to="/videos/OML5Cpg-LJg" state={{ name: "세번째 연습" }}>
-            세번째 연습
-          </Link>
-        </Video>
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/OML5Cpg-LJg" state={{ name: "3번째 연습" }}>
+              3번째 연습
+            </Link>
+          </Video>
+        </VideoContainer>
 
-        <Video>
-          <Link to="/videos/rlfzhYVclAU" state={{ name: "네번째 연습" }}>
-            네번째 연습
-          </Link>
-        </Video>
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/rlfzhYVclAU" state={{ name: "4번째 연습" }}>
+              4번째 연습
+            </Link>
+          </Video>
+        </VideoContainer>
 
-        <Video>
-          <Link to="/videos/dl4ocmK5gbg" state={{ name: "다섯번째 연습" }}>
-            다섯번째 연습
-          </Link>
-        </Video>
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/dl4ocmK5gbg" state={{ name: "5번째 연습" }}>
+              5번째 연습
+            </Link>
+          </Video>
+        </VideoContainer>
 
-        <Video>
-          <Link to="/videos/7OIesgL-p1I" state={{ name: "여섯번째 연습" }}>
-            여섯번째 연습
-          </Link>
-        </Video>
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/7OIesgL-p1I" state={{ name: "6번째 연습" }}>
+              6번째 연습
+            </Link>
+          </Video>
+        </VideoContainer>
+
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/BSsBFrBon4g" state={{ name: "7번째 연습" }}>
+              7번째 연습
+            </Link>
+          </Video>
+          <Video>
+            <Link to="/videos/E5B-He6-UJ8" state={{ name: "오른쪽 풀영상" }}>
+              오른쪽 풀영상
+            </Link>
+          </Video>
+          <Video>
+            <Link to="/videos/ATZ8nSYoUXY" state={{ name: "왼쪽 풀영상" }}>
+              왼쪽 풀영상
+            </Link>
+          </Video>
+        </VideoContainer>
       </VideoList>
     </Container>
   );
