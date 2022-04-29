@@ -53,7 +53,7 @@ function Videos() {
   return (
     <Container>
       <Header>
-        <Title>농구연습팀</Title>
+        <Title>Team Work Ethic</Title>
       </Header>
       <VideoList>
         <VideoContainer>
@@ -118,6 +118,18 @@ function Videos() {
           <Video>
             <Link to="/videos/ATZ8nSYoUXY" state={{ name: "왼쪽 풀영상" }}>
               왼쪽 풀영상
+            </Link>
+          </Video>
+        </VideoContainer>
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/vw-FpNpmB5g" state={{ name: "8번째 연습" }}>
+              8번째 연습
+            </Link>
+          </Video>
+          <Video>
+            <Link to="/videos/EYj7qF7T5zM" state={{ name: "풀영상" }}>
+              풀영상
             </Link>
           </Video>
         </VideoContainer>
