@@ -19,7 +19,8 @@ const Header = styled.header`
 `;
 
 const Title = styled.h1`
-  font-size: 48px;
+  font-size: 38px;
+  font-weight: bolder;
   color: ${(props) => props.theme.accentColor};
 `;
 
