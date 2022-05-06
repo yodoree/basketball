@@ -7,9 +7,8 @@ const URL = `https://www.youtube.com/embed`;
 const Container = styled.div`
   padding: 0px 10px;
   padding-top: 10px;
-  max-width: 560px;
   margin: 0 auto;
-  height: 100vh;
+  max-width: 800px;
 `;
 
 const TitleWrapper = styled.div`
@@ -34,11 +33,19 @@ const VideoDescription = styled.p`
   background: ${(props) => props.theme.bgColor}; ;
 `;
 
-const VideoWrapper = styled.div`
+const VideoView = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 `;
 interface RouteState {
   name: string;
@@ -56,26 +63,26 @@ function Video() {
           <Back>&larr;</Back>
         </Link>
       </TitleWrapper>
-      <VideoWrapper>
+      <VideoView>
         <iframe
-          width="90%"
-          height="35%"
+          width="100%"
+          height="100%"
           src={`${URL}/${id}`}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        {name.includes("풀영상") ? (
-          <VideoDescription>✅무편집본 영상입니다</VideoDescription>
-        ) : (
-          <VideoDescription>
-            ✅ 자신의 피드백을 유튜브 영상 댓글에 남겨주세요! <br />
-            🏆 꾸준한 피드백을 남겨주시는분께는 <br />
-            👍🏼 연말에 푸짐한 상품을 드립니다!
-          </VideoDescription>
-        )}
-      </VideoWrapper>
+      </VideoView>
+      {name.includes("풀영상") ? (
+        <VideoDescription>✅무편집본 영상입니다</VideoDescription>
+      ) : (
+        <VideoDescription>
+          ✅ 자신의 피드백을 유튜브 영상 댓글에 남겨주세요! <br />
+          🏆 꾸준한 피드백을 남겨주시는분께는 <br />
+          👍🏼 연말에 푸짐한 상품을 드립니다!
+        </VideoDescription>
+      )}
     </Container>
   );
 }

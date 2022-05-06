@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   padding: 0px 10px;
-  max-width: 480px;
+  max-width: 800px;
+  min-width: 320px;
   margin: 0 auto;
 `;
 
@@ -13,6 +14,8 @@ const Header = styled.header`
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.h1`
@@ -20,7 +23,10 @@ const Title = styled.h1`
   color: ${(props) => props.theme.accentColor};
 `;
 
-const VideoList = styled.ul``;
+const VideoList = styled.ul`
+  display: flex;
+  flex-direction: column;
+`;
 
 const VideoContainer = styled.li`
   display: flex;
@@ -111,13 +117,13 @@ function Videos() {
             </Link>
           </Video>
           <Video>
-            <Link to="/videos/E5B-He6-UJ8" state={{ name: "오른쪽 풀영상" }}>
-              오른쪽 풀영상
+            <Link to="/videos/E5B-He6-UJ8" state={{ name: "우측 풀영상" }}>
+              우측 풀영상
             </Link>
           </Video>
           <Video>
-            <Link to="/videos/ATZ8nSYoUXY" state={{ name: "왼쪽 풀영상" }}>
-              왼쪽 풀영상
+            <Link to="/videos/ATZ8nSYoUXY" state={{ name: "좌쪽 풀영상" }}>
+              좌측 풀영상
             </Link>
           </Video>
         </VideoContainer>
