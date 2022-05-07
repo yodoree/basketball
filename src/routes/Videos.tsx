@@ -140,6 +140,13 @@ function Videos() {
             </Link>
           </Video>
         </VideoContainer>
+        <VideoContainer>
+          <Video>
+            <Link to="/videos/sNnmsgeoRIg" state={{ name: "9번째 연습" }}>
+              9번째 연습
+            </Link>
+          </Video>
+        </VideoContainer>
       </VideoList>
     </Container>
   );
