@@ -22,10 +22,6 @@ const Title = styled.h3`
   margin-bottom: 10px;
 `;
 
-const Back = styled.span`
-  font-size: 32px;
-`;
-
 const VideoDescription = styled.p`
   margin-top: 10px;
   padding: 5px 5px;
@@ -60,9 +56,6 @@ function Video() {
     <Container>
       <TitleWrapper>
         <Title>{name}</Title>
-        <Link to="/">
-          <Back>&larr;</Back>
-        </Link>
       </TitleWrapper>
       <VideoView>
         <iframe

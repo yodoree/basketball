@@ -254,7 +254,7 @@ function Videos() {
           <VideoContainer>
             <Video>
               <Link
-                to={`/videos/${type}/1/3fTDpIcVdiQ`}
+                to={`/videos/${type}/1/yqqWTx0WVl8`}
                 state={{ name: "결승전" }}
               >
                 결승전
