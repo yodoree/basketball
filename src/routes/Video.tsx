@@ -67,7 +67,7 @@ function Video() {
           allowFullScreen
         ></iframe>
       </VideoView>
-      {type === "exercise" ? (
+      {type === "year" ? (
         name.includes("연습경기") ? (
           <VideoDescription>
             ✅연습경기 영상입니다 <br />
