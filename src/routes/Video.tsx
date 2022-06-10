@@ -1,5 +1,4 @@
 import { useLocation, useParams } from "react-router";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const URL = `https://www.youtube.com/embed`;
@@ -69,8 +68,11 @@ function Video() {
         ></iframe>
       </VideoView>
       {type === "exercise" ? (
-        name.includes("풀영상") ? (
-          <VideoDescription>✅무편집본 영상입니다</VideoDescription>
+        name.includes("연습경기") ? (
+          <VideoDescription>
+            ✅연습경기 영상입니다 <br />
+            ⛹️미션을 잘 수행했는지 확인해보세요!
+          </VideoDescription>
         ) : (
           <VideoDescription>
             ✅ 자신의 피드백을 유튜브 영상 댓글에 남겨주세요! <br />
