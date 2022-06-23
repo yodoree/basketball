@@ -21,7 +21,7 @@ function Header() {
   return (
     <HeaderLayout>
       <Title>
-        <Link to="/">Team Work Ethic</Link>
+        <Link to="/">Team Move</Link>
       </Title>
     </HeaderLayout>
   );
