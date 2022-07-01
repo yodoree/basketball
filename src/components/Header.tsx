@@ -4,29 +4,20 @@ import styled from "styled-components";
 import logoImg from "../img/logo.png";
 
 const HeaderLayout = styled.header`
-  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-`;
-
-const Title = styled.h1`
-  font-size: 38px;
-  font-weight: bolder;
-  color: ${(props) => props.theme.accentColor};
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 function Header() {
   return (
     <HeaderLayout>
-      <Title>
-        <Link to="/">
-          <img src={logoImg} width="350" />
-        </Link>
-      </Title>
+      <Link to="/">
+        <img src={logoImg} height="100%" />
+      </Link>
     </HeaderLayout>
   );
 }

@@ -54,9 +54,7 @@ body {
   background-color:${(props) => props.theme.bgColor};
   color:${(props) => props.theme.textColor};
   line-height: 1.2;
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/03/01/backboard-1866968_1280.jpg");
-  background-size: cover;
-  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
 }
 a {
   text-decoration: none;
