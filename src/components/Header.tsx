@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+import logoImg from "../img/logo.png";
+
 const HeaderLayout = styled.header`
   height: 10vh;
   display: flex;
@@ -21,7 +23,9 @@ function Header() {
   return (
     <HeaderLayout>
       <Title>
-        <Link to="/">Team Move</Link>
+        <Link to="/">
+          <img src={logoImg} width="350" />
+        </Link>
       </Title>
     </HeaderLayout>
   );
