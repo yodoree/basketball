@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/basketball/static/js/main.76642e7b.js",
+    "main.js": "/basketball/static/js/main.9fc7a134.js",
+    "static/media/logo.png": "/basketball/static/media/logo.54ca43d566aa9b39a659.png",
     "index.html": "/basketball/index.html",
-    "main.76642e7b.js.map": "/basketball/static/js/main.76642e7b.js.map"
+    "main.9fc7a134.js.map": "/basketball/static/js/main.9fc7a134.js.map"
   },
   "entrypoints": [
-    "static/js/main.76642e7b.js"
+    "static/js/main.9fc7a134.js"
   ]
 }
