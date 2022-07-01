@@ -190,7 +190,7 @@ function Videos() {
             <Video>
               <Link
                 to={`/videos/${type}/2022/F0ukuz7chQg`}
-                state={{ name: "연습경기" }}
+                state={{ name: "1번째 연습경기" }}
               >
                 1번째 연습경기
               </Link>
@@ -208,7 +208,7 @@ function Videos() {
             <Video>
               <Link
                 to={`/videos/${type}/2022/84qZUbJi7wA`}
-                state={{ name: "연습경기" }}
+                state={{ name: "2번째 연습경기" }}
               >
                 2번째 연습경기
               </Link>
@@ -218,9 +218,19 @@ function Videos() {
             <Video>
               <Link
                 to={`/videos/${type}/2022/BVBH-sjcKd0`}
-                state={{ name: "연습경기" }}
+                state={{ name: "3번째 연습경기" }}
               >
                 3번째 연습경기
+              </Link>
+            </Video>
+          </VideoContainer>
+          <VideoContainer>
+            <Video>
+              <Link
+                to={`/videos/${type}/2022/lFqo8-c7pcE`}
+                state={{ name: "4번째 연습경기" }}
+              >
+                4번째 연습경기
               </Link>
             </Video>
           </VideoContainer>
