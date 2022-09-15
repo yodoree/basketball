@@ -324,6 +324,16 @@ function Videos() {
               </Link>
             </Video>
           </VideoContainer>
+          <VideoContainer>
+            <Video>
+              <Link
+                to={`/videos/${type}/2022/VRt4ISR5Oao`}
+                state={{ name: "12번째 연습경기" }}
+              >
+                12번째 연습경기
+              </Link>
+            </Video>
+          </VideoContainer>
         </VideoList>
       ) : (
         <VideoList>
