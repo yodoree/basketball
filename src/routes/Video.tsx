@@ -67,22 +67,11 @@ function Video() {
           allowFullScreen
         ></iframe>
       </VideoView>
-      {type === "year" ? (
-        name.includes("연습경기") ? (
-          <VideoDescription>
-            ✅연습경기 영상입니다 <br />
-            ⛹️미션을 잘 수행했는지 확인해보세요!
-          </VideoDescription>
-        ) : (
-          <VideoDescription>
-            ✅ 자신의 피드백을 유튜브 영상 댓글에 남겨주세요! <br />
-            🏆 꾸준한 피드백을 남겨주시는분께는 <br />
-            👍🏼 연말에 푸짐한 상품을 드립니다!
-          </VideoDescription>
-        )
-      ) : (
-        <VideoDescription>✅ {name}</VideoDescription>
-      )}
+      <VideoDescription>
+        ✅ 자신의 피드백을 유튜브 영상 댓글에 남겨주세요! <br />
+        🏆 꾸준한 피드백을 남겨주시는분께는 <br />
+        👍🏼 연말에 푸짐한 상품을 드립니다!
+      </VideoDescription>
     </Container>
   );
 }

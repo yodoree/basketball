@@ -14,13 +14,19 @@ function Home() {
       <Nav>
         <NavContainer>
           <NavMenu>
-            <Link to="/videos/year">정기연습</Link>
+            <Link to="/videos/workout">정기연습</Link>
           </NavMenu>
         </NavContainer>
 
         <NavContainer>
           <NavMenu>
-            <Link to="/videos/tournament">자체 대회</Link>
+            <Link to="/videos/exchange">교류전</Link>
+          </NavMenu>
+        </NavContainer>
+
+        <NavContainer>
+          <NavMenu>
+            <Link to="/videos/competition">자체 대회</Link>
           </NavMenu>
         </NavContainer>
       </Nav>
