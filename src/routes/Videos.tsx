@@ -489,6 +489,16 @@ function Videos() {
               </Link>
             </Video>
           </VideoContainer>
+          <VideoContainer>
+            <Video>
+              <Link
+                to={`/videos/${type}/${id}/SFCgahZaxgQ`}
+                state={{ name: "3번째 교류전" }}
+              >
+                3번째 교류전
+              </Link>
+            </Video>
+          </VideoContainer>
         </VideoList>
       )}
     </Container>
