@@ -387,9 +387,9 @@ function Videos() {
             <Video>
               <Link
                 to={`/videos/${type}/${id}/LxrrOH59VGE`}
-                state={{ name: "32번째 운동" }}
+                state={{ name: "33번째 운동" }}
               >
-                32번째 운동
+                33번째 운동
               </Link>
             </Video>
           </VideoContainer>
