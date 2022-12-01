@@ -443,6 +443,16 @@ function Videos() {
               </Link>
             </Video>
           </VideoContainer>
+          <VideoContainer>
+            <Video>
+              <Link
+                to={`/videos/${type}/${id}/6a4wq7P4uu8`}
+                state={{ name: "39번째 운동" }}
+              >
+                39번째 운동
+              </Link>
+            </Video>
+          </VideoContainer>
         </VideoList>
       ) : type === "competition" ? (
         <VideoList>
