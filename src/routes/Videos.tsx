@@ -473,6 +473,32 @@ function Videos() {
               </Link>
             </Video>
           </VideoContainer>
+          <VideoContainer>
+            <Video>
+              <Link
+                to={`/videos/${type}/${id}/fpU-rn_gtkA`}
+                state={{ name: "42번째 운동" }}
+              >
+                42번째 운동
+              </Link>
+            </Video>
+            <Video>
+              <Link
+                to={`/videos/${type}/${id}/fELNSiXzU8Q`}
+                state={{ name: "포켓드리블" }}
+              >
+                포켓드리블 기본
+              </Link>
+            </Video>
+            <Video>
+              <Link
+                to={`/videos/${type}/${id}/sdJVc4gopYg`}
+                state={{ name: "포켓드리블 연계" }}
+              >
+                포켓드리블 연계
+              </Link>
+            </Video>
+          </VideoContainer>
         </VideoList>
       ) : type === "competition" ? (
         <VideoList>
