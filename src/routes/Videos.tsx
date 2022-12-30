@@ -502,10 +502,34 @@ function Videos() {
           <VideoContainer>
             <Video>
               <Link
-                to={`/videos/${type}/${id}/gfb1TixeRco`}
-                state={{ name: "43번째 운동" }}
+                to={`/videos/${type}/${id}/UZEnmcfZoWI`}
+                state={{ name: "밴드 드리블" }}
               >
-                43번째 운동
+                밴드 드리블
+              </Link>
+            </Video>
+            <Video>
+              <Link
+                to={`/videos/${type}/${id}/V5KradLyoaw`}
+                state={{ name: "기본 드리블" }}
+              >
+                기본 드리블
+              </Link>
+            </Video>
+            <Video>
+              <Link
+                to={`/videos/${type}/${id}/8g9s10Xhr2Q`}
+                state={{ name: "포켓드리블 연계" }}
+              >
+                포켓드리블 연계
+              </Link>
+            </Video>
+            <Video>
+              <Link
+                to={`/videos/${type}/${id}/MeTX97OF2Xk`}
+                state={{ name: "드리블 없이 5 on 5" }}
+              >
+                드리블 없이 5 on 5
               </Link>
             </Video>
           </VideoContainer>
