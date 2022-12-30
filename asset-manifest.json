@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/basketball/static/js/main.83351cac.js",
+    "main.js": "/basketball/static/js/main.0b630ace.js",
     "index.html": "/basketball/index.html",
-    "main.83351cac.js.map": "/basketball/static/js/main.83351cac.js.map"
+    "main.0b630ace.js.map": "/basketball/static/js/main.0b630ace.js.map"
   },
   "entrypoints": [
-    "static/js/main.83351cac.js"
+    "static/js/main.0b630ace.js"
   ]
 }
